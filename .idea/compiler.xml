@@ -24,8 +24,16 @@
         <processorPath useClasspath="true" />
         <module name="UnitTestingWithMockito" />
       </profile>
+      <profile default="false" name="Annotation profile for OmsWithMockito" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="OmsWithMockito" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="OmsWithMockito" target="1.8" />
       <module name="UnitTestingWithMockito" target="1.5" />
     </bytecodeTargetLevel>
   </component>
